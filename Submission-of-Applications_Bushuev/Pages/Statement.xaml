@@ -75,6 +75,7 @@
                 Margin="10, 235, 10, 0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
+                x:Name="okoncil"
                 />
             <Label
                 HorizontalAlignment="Left" VerticalAlignment="Top"
@@ -86,6 +87,7 @@
                 Margin="10, 290, 10, 0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
+                x:Name="God"
                 />
             <Button
                 Content="Продолжить"

@@ -177,7 +177,7 @@
                     VerticalAlignment="Bottom"
                     Width="150"
                     Height="25" Grid.Column="2"
-                    
+                    Click="Button_Click"
                 />
             </Grid>
         </ScrollViewer>
