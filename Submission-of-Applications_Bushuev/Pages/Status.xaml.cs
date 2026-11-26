@@ -10,5 +10,10 @@ namespace Submission_of_Applications_Bushuev.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Passport());
+        }
     }
 }
