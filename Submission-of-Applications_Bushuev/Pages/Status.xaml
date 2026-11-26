@@ -1,0 +1,113 @@
+﻿<Page x:Class="Submission_of_Applications_Bushuev.Pages.Status"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Submission_of_Applications_Bushuev.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="410" d:DesignWidth="792"
+      Title="Status">
+    <Grid Background="#F8F9FA">
+        <Grid Margin="0, 0, 0, 349.6" Background="White">
+            <Image
+                HorizontalAlignment="Left" Height="40" Margin="10, 10, 0, 0"
+                VerticalAlignment="Top" Width="40" Source="/Images/logo.png"
+                />
+            <Label Content="Электронная приемная компания" HorizontalAlignment="Left" VerticalAlignment="Top"
+               Margin="60, 0, 0, 0" FontWeight="Bold" FontSize="19"/>
+            <Label Content="Пермского авиационного техникума им. А.Д. Щвецова" VerticalAlignment="Top" 
+               Margin="60, 25, 0, 0"/>
+        </Grid>
+        <ScrollViewer VerticalContentAlignment="Top" Margin="0, 60, 0, 0">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Статус" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"
+                    FontWeight="Bold"/>
+                <Label Content="Имею статус:" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 40, 0, 0"
+                   />
+                <Label Content="Отметить при наличии" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="20, 65, 0, 0"
+                   FontSize="10"
+                   Foreground="red"
+                   />
+                <CheckBox
+                    Content="ребенок-сирота/ребенок, оставшийся без попечения родителей"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="20, 90, 0, 0"
+                    />
+                <CheckBox
+                    Content="инвалид"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="20, 105, 0, 0"
+                    />
+                <CheckBox
+                    Content="малообеспеченный"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="20, 120, 0, 0"
+                    />
+                <Label Content="Приписное удостоверение (военный билет)" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 140, 0, 0"
+                   />
+                <Label Content="Выберите один из вариантов:" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="20, 165, 0, 0"
+                   FontSize="10"
+                   Foreground="red"
+                   />
+                <RadioButton
+                    Content="имею (при нажатии данной кнопки необходимо ниже прикрепить сканы страниц документа)"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="20, 190, 0, 0" Grid.ColumnSpan="2"
+                    />
+                <RadioButton
+                    Content="не имею"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="20, 205, 0, 0"
+                    />
+                <Label
+                    HorizontalAlignment="Left" VerticalAlignment="Top"
+                    Content="Прикрепить сканы 1-ой и 2-ой страниц прописного удостоворения или военного билета (стр. 1-5, 8-13, 20-21) при их наличии"
+                    Margin="10, 225, 0, 0" Grid.ColumnSpan="2"
+                    />
+                <Label Content="(Формат документов должен быть PNG, JPEG или PDF, а максимальный размер каждого файла 5 МБ)" 
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="20, 250, 0, 0"
+                   FontSize="10"
+                   Foreground="red" Grid.ColumnSpan="2"
+                   />
+                <TextBox
+                    Height="24"
+                    Margin="20,275,115,0"
+                    TextWrapping="Wrap"
+                    VerticalAlignment="Top" Grid.ColumnSpan="2"
+                    />
+                <Button
+                    Content="Выбрать ..."
+                    HorizontalAlignment="Right"
+                    Margin="0,275,10,0"
+                    VerticalAlignment="Top"
+                    Width="100"
+                    Height="24" Grid.Column="1"
+                    />
+                <Button
+                    Content="Продолжить"
+                    HorizontalAlignment="Right"
+                    Margin="0, 0, 10, 5"
+                    VerticalAlignment="Bottom"
+                    Width="150"
+                    Height="25" Grid.Column="1"
+                    />
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

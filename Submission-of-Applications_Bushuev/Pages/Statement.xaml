@@ -11,7 +11,7 @@
         <Grid Margin="0, 0, 0, 349.6" Background="White">
             <Image
                 HorizontalAlignment="Left" Height="40" Margin="10, 10, 0, 0"
-                VerticalAlignment="Top" Width="40" Source="/Pages/logo.png"
+                VerticalAlignment="Top" Width="40" Source="/Images/logo.png"
             />
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" VerticalAlignment="Top"
                    Margin="60, 0, 0, 0" FontWeight="Bold" FontSize="19"/>
@@ -94,6 +94,7 @@
                 VerticalAlignment="Bottom"
                 Width="150"
                 Height="25"
+                Click="Button_Click"
                 />
         </Grid>
     </Grid>
